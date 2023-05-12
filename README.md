@@ -9,12 +9,7 @@ Calculatrice crée sous framework tailwind et JS
 ## Setup & Use
 
 ```
-- For Tailwindcss , you have to install the package
-- First , run " npm init -y in the project folder
-- Then run npm install -D tailwindcss
-- Then run npx tailwindcss init
-- Then put what is in the https://tailwindcss.com/docs/installation step 2 , into the tailwind.config.js
-- For DaisyUI , make npm i daisyui and it should be good
+- Do ` npm add ` for downloading all the dependancies needed
 ```
 
 ### Project Initialization

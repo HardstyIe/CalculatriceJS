@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="h-full w-full">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style.css">
   <link rel="stylesheet" href="/dist/output.css">
   <title>Calculatrice JS</title>
 </head>
 
-<body>
+<body class="h-full w-full">
 
-  <main class="calculatrice m-auto border h-96 w-64 flex flex-col justify-center items-center">
-    <div class="flex flex-col h-1/6 w-4/5 p-4 border border-gray-300 rounded-md bg-white ecran"></div>
-    <div class="grid grid-cols-4 grid-rows-5 gap-3 w-3/4 my-5 touches">
-      <button data-key="103" class="bg-white rounded text-center p-1 button7 buttonCalc text-black">7</button>
-      <button data-key="100"
-        class="col-start-1 row-start-2 bg-white rounded text-center p-1 button4 buttonCalc text-black">4</button>
-      <button data-key="101"
-        class="col-start-2 row-start-2 bg-white rounded text-center p-1 button5 buttonCalc text-black">5</button>
-      <button data-key="104"
-        class="col-start-2 row-start-1 bg-white rounded text-center p-1 button8 buttonCalc text-black">8</button>
-      <button data-key="105"
-        class="col-start-3 row-start-1 bg-white rounded text-center p-1 button9 buttonCalc text-black">9</button>
-      <button data-key="102"
-        class="col-start-3 row-start-2 bg-white rounded text-center p-1 button6 buttonCalc text-black">6</button>
-      <button data-key="106"
-        class="col-start-4 row-start-2 bg-white rounded text-center p-1 button* buttonCalc text-black">*</button>
-      <button data-key="111"
-        class="col-start-4 row-start-1 bg-white rounded text-center p-1 button/ buttonCalc text-black">/</button>
-      <button data-key="109"
-        class="col-start-4 row-start-3 bg-white rounded text-center p-1 button- buttonCalc text-black">-</button>
-      <button data-key="8"
-        class="col-start-4 row-start-4 bg-white rounded text-center p-1 buttonC buttonCalc text-black">C</button>
-      <button data-key="107"
-        class="col-start-3 row-start-4 bg-white rounded text-center p-1 button+ buttonCalc text-black">+</button>
-      <button data-key="99"
-        class="col-start-3 row-start-3 bg-white rounded text-center p-1 button3 buttonCalc text-black">3</button>
-      <button data-key="98"
-        class="col-start-2 row-start-3 bg-white rounded text-center p-1 button2 buttonCalc text-black">2</button>
-      <button data-key="96"
-        class="col-start-2 row-start-4 bg-white rounded text-center p-1 button0 buttonCalc text-black">0</button>
-      <button data-key="187"
-        class="col-span-4 col-start-1 row-start-5 text-center bg-blue-500 button= buttonCalc text-white font-black text-3xl flex justify-center items-center">=</button>
-      <button data-key="110"
-        class="col-start-1 row-start-4 bg-white rounded text-center p-1 button. buttonCalc text-black">.</button>
-      <button data-key="97"
-        class="col-start-1 row-start-3 bg-white rounded text-center p-1 button1 buttonCalc text-black">1</button>
+
+  <div class="calculatrice-wrapper h-full w-full flex">
+    <div
+      class="calculatrice m-auto  border w-screen h-full md:w-2/4 md:h-3/4 xl:w-96 xl:h-2/3 flex flex-col justify-center items-center">
+      <div
+        class="flex flex-col h-1/6 w-4/5 p-4 border border-gray-300 rounded-md bg-white ecran justify-center items-center">
+      </div>
+      <div class="grid grid-cols-4 grid-rows-5 gap-3 w-3/4 my-5 touches">
+        <button data-key="103" class="bg-white rounded text-center p-1 button7 buttonCalc text-black">7</button>
+        <button data-key="100"
+          class="col-start-1 row-start-2 bg-white rounded text-center p-1 button4 buttonCalc text-black">4</button>
+        <button data-key="101"
+          class="col-start-2 row-start-2 bg-white rounded text-center p-1 button5 buttonCalc text-black">5</button>
+        <button data-key="104"
+          class="col-start-2 row-start-1 bg-white rounded text-center p-1 button8 buttonCalc text-black">8</button>
+        <button data-key="105"
+          class="col-start-3 row-start-1 bg-white rounded text-center p-1 button9 buttonCalc text-black">9</button>
+        <button data-key="102"
+          class="col-start-3 row-start-2 bg-white rounded text-center p-1 button6 buttonCalc text-black">6</button>
+        <button data-key="106"
+          class="col-start-4 row-start-2 bg-white rounded text-center p-1 button* buttonCalc text-black">*</button>
+        <button data-key="111"
+          class="col-start-4 row-start-1 bg-white rounded text-center p-1 button/ buttonCalc text-black">/</button>
+        <button data-key="109"
+          class="col-start-4 row-start-3 bg-white rounded text-center p-1 button- buttonCalc text-black">-</button>
+        <button data-key="8"
+          class="col-start-4 row-start-4 bg-white rounded text-center p-1 buttonC buttonCalc text-black">&larr;</button>
+        <button data-key="107"
+          class="col-start-3 row-start-4 bg-white rounded text-center p-1 button+ buttonCalc text-black">+</button>
+        <button data-key="99"
+          class="col-start-3 row-start-3 bg-white rounded text-center p-1 button3 buttonCalc text-black">3</button>
+        <button data-key="98"
+          class="col-start-2 row-start-3 bg-white rounded text-center p-1 button2 buttonCalc text-black">2</button>
+        <button data-key="96"
+          class="col-start-2 row-start-4 bg-white rounded text-center p-1 button0 buttonCalc text-black">0</button>
+        <button data-key="13"
+          class="col-span-3 col-start-1 row-start-5 rounded text-center bg-blue-500 button= buttonCalc text-white font-black text-3xl flex justify-center items-center">=</button>
+        <button data-key="49,3" id="bouton-effacer"
+          class="col-span-1 col-start-4 row-start-5 text-center bg-white button= buttonCalc text-black rounded flex justify-center items-center">
+          RESET</button>
+        <button data-key="110"
+          class="col-start-1 row-start-4 bg-white rounded text-center p-1 button. buttonCalc text-black">.</button>
+        <button data-key="97"
+          class="col-start-1 row-start-3 bg-white rounded text-center p-1 button1 buttonCalc text-black">1</button>
+      </div>
     </div>
-  </main>
-
+  </div>
 
   <script src="/src/assets/JS/index.js">
   </script>

@@ -1,4 +1,6 @@
 // DOM
+const boutonEffacer = document.querySelector("#bouton-effacer");
+const boutonModulo = document.querySelector("#modulo");
 const touches = [...document.querySelectorAll(".buttonCalc")];
 const listeKeycode = touches.map((touche) => touche.dataset.key);
 const ecran = document.querySelector(".ecran");
@@ -17,7 +19,9 @@ touches.forEach((touche) => {
   });
 });
 
-const boutonEffacer = document.querySelector("#bouton-effacer");
+boutonModulo.addEventListener("click", () => {
+  calculer("%");
+});
 
 const calculer = (valeur) => {
   if (listeKeycode.includes(valeur)) {

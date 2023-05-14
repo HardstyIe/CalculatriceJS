@@ -19,9 +19,9 @@ touches.forEach((touche) => {
   });
 });
 
-boutonModulo.addEventListener("click", () => {
-  calculer("%");
-});
+// boutonModulo.addEventListener("click", () => {
+//   calculer("%");
+// });
 
 const calculer = (valeur) => {
   if (listeKeycode.includes(valeur)) {
